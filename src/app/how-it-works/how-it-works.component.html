@@ -1,0 +1,95 @@
+<section class="page-section" [@componentEffect]="componentState">
+  <div class="container">
+
+    <!-- How To Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary">Como Funciona?</h2>
+
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fa fa-money"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <h2 class="text-center lead">Nós somos uma plataforma de empréstimos online. Somos simples, rápidos e ágeis =)</h2>
+
+  </div>
+</section>
+
+<!-- Simulation Section -->
+<section class="page-section bg-light" [@componentEffect]="componentState">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-5 col-lg-3 mx-auto align-self-center text-center">
+        <img src="../../assets/img/how-it-works/simulation.png" style="width: 256px;">
+      </div>
+      <div class="col-md-8 col-lg-6 mx-auto align-self-center text-center">
+        <h1 class="text-uppercase text-secondary">Faça Uma Simulação</h1>
+        <h4 class="lead">Antes de começar, você pode simular o seu empréstimo em poucos passos sem burocracia.</h4>
+        <br>
+        <a class="btn btn-warning btn-lg" role="button" [routerLink]="['/simulation']">Simular Agora!</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Application Section -->
+<section class="page-section" [@componentEffect]="componentState">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-lg-6 mx-auto align-self-center text-center">
+        <h1 class="text-uppercase text-secondary">Pedir Empréstimo</h1>
+        <h4 class="lead">Você pode pedir o seu empréstimo através das opções abaixo. Que tal falar com o Agente Virtual?</h4>
+        <br>
+        <a class="btn btn-primary btn-lg" role="button" [routerLink]="['/form-application']"><i class="fa fa-sticky-note-o"></i> Formulário Web</a>
+        <span class="mr-1"></span>
+        <a class="btn btn-primary btn-lg" role="button" [routerLink]="['/bot-application']"><i class="fa fa-commenting-o"></i><span class="mr-1"></span><i class="fa fa-microphone"></i> Agente Virtual</a>
+      </div>
+      <div class="col-md-5 col-lg-3 mx-auto align-self-center text-center">
+        <img src="../../assets/img/how-it-works/application.png" style="width: 256px;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Wait For Section -->
+<section class="page-section bg-light" [@componentEffect]="componentState">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-5 col-lg-3 mx-auto align-self-center text-center">
+        <img src="../../assets/img/how-it-works/coffee-break.png" style="width: 256px;">
+      </div>
+      <div class="col-md-8 col-lg-6 mx-auto align-self-center text-center">
+        <h1 class="text-uppercase text-secondary">Aguardar Análise</h1>
+        <h4 class="lead">O seu pedido será analisado e você receberá uma resposta em até 24h.</h4>
+        <br>
+        <a class="btn btn-dark btn-lg" role="button" [routerLink]="['/about']">Saiba Mais Sobre Nós!</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sign Contract Section -->
+<section class="page-section" [@componentEffect]="componentState">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-lg-6 mx-auto align-self-center text-center">
+        <h1 class="text-uppercase text-secondary">Assinar Contrato</h1>
+        <h4 class="lead">Se o seu pedido for aprovado, você só precisa assinar o contrato e enviar para nós! Em 24h você receberá o dinheiro na sua conta =)</h4>
+      </div>
+      <div class="col-md-5 col-lg-3 mx-auto align-self-center text-center">
+        <img src="../../assets/img/how-it-works/sign-contract.png" style="width: 256px;">
+      </div>
+    </div>
+
+  </div>
+</section>

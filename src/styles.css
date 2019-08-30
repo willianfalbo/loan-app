@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* https://github.com/angular-slider/ng5-slider/blob/master/STYLING.md */
+.custom-slider .ng5-slider .ng5-slider-pointer {
+    background-color: royalblue !important;
+    width: 15px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-bar {
+    height: 10px;
+    bottom: 8px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-pointer:after {
+    display: none;
+}
+
+.custom-slider .ng5-slider .ng5-slider-selection {
+    background-color: #76d591;
+}

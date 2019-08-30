@@ -1,0 +1,12 @@
+.virtual-assistant-window {
+    position: fixed;
+    z-index: 1;
+    right: 5px;
+    bottom: 5px;
+    height: 70%;
+    width: 350px;
+}
+
+.virtual-assistant-window .card-header a {
+    cursor: pointer;
+}

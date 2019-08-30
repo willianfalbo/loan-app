@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppLayoutComponent implements OnInit {
 
+  showFaqBotWindow = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  faqBotIconClickedEvent(clicked: boolean) {
+    this.showFaqBotWindow = true;
+  }
+
+  faqBotCloseEvent(clicked: boolean) {
+    this.showFaqBotWindow = false;
   }
 
 }

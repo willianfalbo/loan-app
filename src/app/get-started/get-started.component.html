@@ -1,0 +1,49 @@
+<!-- Get Started Section -->
+<section class="page-section bg-primary text-white" id="getStarted" [@componentEffect]="componentState">
+  <div class="container">
+
+    <!-- Get Started Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-white">Como Posso Ajudar?</h2>
+
+    <!-- Icon Divider -->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fa fa-money"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="row justify-content-center align-self-center align-items-center">
+      <div class="col col-lg-4">
+        <a class="btn btn-warning btn-lg btn-block" role="button" [routerLink]="['/simulation']"><i class="fa fa-line-chart"></i> Quero Simular!</a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row justify-content-center align-self-center align-items-center">
+      <div class="col mx-auto text-center">
+        <p class="lead">Quero pedir o meu empréstimo usando:</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-self-center align-items-center">
+      <div class="col col-lg-4">
+        <a class="btn btn-light btn-lg btn-block" role="button" [routerLink]="['/form-application']"><i class="fa fa-sticky-note-o"></i> Formulário Web</a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row justify-content-center align-self-center align-items-center">
+      <div class="col col-lg-4">
+        <a class="btn btn-light btn-lg btn-block" role="button" [routerLink]="['/bot-application']"><i class="fa fa-commenting-o"></i><span class="mr-1"></span><i class="fa fa-microphone"></i> Agente Virtual</a>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+  </div>
+</section>

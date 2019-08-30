@@ -1,0 +1,14 @@
+  <!-- reference https://getbootstrap.com/docs/4.3/components/card/ -->
+  <div class="card mb-4" [@componentEffect]="componentState">
+    <div class="card-img-wrapper text-center">
+      <a [routerLink]="['/get-started']">
+        <img class="card-img-top" src="{{loanItem.imageUrl}}" alt="{{loanItem.name}}">
+      </a>
+    </div>
+    <div class="card-body p-1">
+      <h4 class="card-title text-center mb-1">
+        {{loanItem.name}}
+      </h4>
+      <p class="card-text text-muted text-center">{{loanItem.description}}</p>
+    </div>
+  </div>

@@ -1,0 +1,100 @@
+<!-- Loan Request Section -->
+<section class="page-section" id="formApplication" [@componentEffect]="componentState">
+    <div class="container">
+  
+      <!-- Loan Request Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pedido de Empréstimo</h2>
+  
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fa fa-money"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+  
+      <div class="row justify-content-center align-self-center align-items-center">
+        <div class="col-sm-8 mx-auto text-center">
+          <p class="lead">Quanto você precisa emprestar?</p>
+        </div>
+      </div>
+      <div class="row justify-content-center align-self-center align-items-center">
+        <div class="col-sm-8 custom-slider">
+          <ng5-slider [(value)]="defaultValueLoan" [options]="loanOptions"></ng5-slider>
+        </div>
+        <!-- <div class="col-lg-2">
+          <input class="form-control" id="value" type="number" step="{{options.step}}" [(ngModel)]="value" placeholder="Valor (R$)" required="required" data-validation-required-message="Digite o valor (R$).">
+        </div> -->
+      </div>
+  
+      <br>
+  
+      <div class="row justify-content-center align-self-center align-items-center">
+        <div class="col-sm-8 mx-auto text-center">
+          <p class="lead">Quantas parcelas você quer?</p>
+        </div>
+      </div>
+      <div class="row justify-content-center align-self-center align-items-center">
+        <div class="col-sm-8 custom-slider">
+          <ng5-slider [(value)]="defaultValueInstallments" [options]="installmentsOptions"></ng5-slider>
+        </div>
+      </div>
+  
+      <!-- Loan Request Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form name="sentMessage" id="loanRequestForm" novalidate="novalidate">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Nome</label>
+                <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Digite o seu nome.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>CPF</label>
+                <input class="form-control" id="taxpayerNumber" type="taxpayerNumber" placeholder="CPF" required="required" data-validation-required-message="Digite o seu CPF.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Data de Nascimento</label>
+                  <input class="form-control" id="birthDate" type="birthDate" placeholder="Data de Nascimento" required="required" data-validation-required-message="Digite a sua data de nascimento.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Número de Telefone</label>
+                <input class="form-control" id="phone" type="tel" placeholder="Número de Telefone" required="required" data-validation-required-message="Digite o seu phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Endereço de E-mail</label>
+                <input class="form-control" id="email" type="email" placeholder="Endereço de E-mail" required="required" data-validation-required-message="Digite o seu endereço de e-mail.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>CEP</label>
+                <input class="form-control" id="postCode" type="postCode" placeholder="CEP" required="required" data-validation-required-message="Digite o seu CEP.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Solicitar Agora</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+  </section>

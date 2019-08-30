@@ -1,0 +1,28 @@
+  <!-- Loan Section -->
+  <section class="page-section bg-light" id="loan">
+    <div class="container">
+
+      <!-- Loan Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Modalidades</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fa fa-money"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Loan Grid Items -->
+      <div class="row">
+
+        <div *ngFor="let loan of loans" class="col-md-6 col-lg-4">
+          <app-loan-card [loanItem]="loan"></app-loan-card>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
