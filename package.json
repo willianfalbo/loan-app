@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build:dev": "ng build",
     "build:prod": "ng build --prod --extract-css=false",
+    "build:prod-bh": "ng build --prod --extract-css=false --base-href \"/loan-app/\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
